@@ -4,6 +4,9 @@ from typing import Optional
 
 def merge_sort(arr: Optional[list[int]]) -> Optional[list[int]]:
 
+    if arr is None:
+        return
+    
     if len(arr) <= 1:
         return arr
 
