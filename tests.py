@@ -3,6 +3,9 @@ from typing import Optional, Callable
 from sorting.merge_sort import merge_sort
 from sorting.quick_sort import quick_sort
 from sorting.bubble_sort import bubble_sort
+from sorting.selection_sort import selection_sort
+from sorting.insertion_sort import insertion_sort
+from sorting.heap_sort import heap_sort
 
 def run_tests(sort_function: Callable[[Optional[list[int]]], Optional[list[int]]]):
 
@@ -42,3 +45,6 @@ if __name__ == "__main__":
     run_tests(sort_function=merge_sort)
     run_tests(sort_function=quick_sort)
     run_tests(sort_function=bubble_sort)
+    run_tests(sort_function=selection_sort)
+    run_tests(sort_function=insertion_sort)
+    run_tests(sort_function=heap_sort)
