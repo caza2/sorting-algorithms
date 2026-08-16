@@ -3,11 +3,8 @@ from typing import Optional
 # Merge Sort. Time O(n log n). Space O(n)
 
 def merge_sort(arr: Optional[list[int]]) -> Optional[list[int]]:
-
-    if arr is None:
-        return
     
-    if len(arr) <= 1:
+    if not arr or len(arr) <= 1:
         return arr
 
     def merge(arr1: list[int], arr2: list[int]) -> list[int]:
